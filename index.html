@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Edmonton Tourism Guide</title>
+    
+    <!-- Inline CSS -->
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and Page Layout */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7fa;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Header Section */
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+        }
+
+        /* Navigation */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #2c3e50;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            color: #e74c3c;
+        }
+
+        /* Hero Section */
+        #hero {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        #hero img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Main Content */
+        #intro {
+            padding: 20px;
+            background-color: #fff;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        #intro h2 {
+            font-size: 2em;
+            color: #2c3e50;
+        }
+
+        #intro p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            margin-top: 30px;
+            background-color: #2c3e50;
+            color: #fff;
+        }
+
+        footer p {
+            font-size: 1em;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            nav ul li {
+                display: block;
+                margin-bottom: 10px;
+            }
+
+            #hero img {
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to the Edmonton Tourism Guide</h1>
+        <p>Your ultimate resource for exploring Edmonton, Alberta!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Edmonton</a></li>
+            <li><a href="attractions.html">Top Attractions</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="hero">
+        <img src="https://your-image-link.com/edmonton-skyline.jpg" alt="Edmonton City Skyline">
+    </section>
+
+    <section id="intro">
+        <h2>Explore Edmonton</h2>
+        <p>Discover everything this vibrant city has to offer—from rich history to modern attractions. Whether you’re visiting for a day or planning to stay longer, Edmonton has something for everyone. The city offers top-notch shopping, dining, and world-famous festivals.</p>
+    </section>
+
+    <section id="top-attractions">
+        <h2>Top Attractions</h2>
+        <ul>
+            <li>The West Edmonton Mall</li>
+            <li>The Royal Alberta Museum</li>
+            <li>Elk Island National Park</li>
+            <li>The Muttart Conservatory</li>
+            <li>The Art Gallery of Alberta</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Edmonton Tourism Guide | Designed by You</p>
+    </footer>
+
+    <!-- Inline JavaScript -->
+    <script>
+        // Example of JavaScript to toggle a class on scroll (just for demonstration)
+        window.onscroll = function() {
+            addStickyClass();
+        };
+
+        function addStickyClass() {
+            var header = document.querySelector('header');
+            if (window.pageYOffset > 50) {
+                header.classList.add('sticky');
+            } else {
+                header.classList.remove('sticky');
+            }
+        }
+    </script>
+
+</body>
+
+</html>
